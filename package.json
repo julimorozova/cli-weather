@@ -2,7 +2,11 @@
   "name": "cli-weather",
   "version": "1.0.0",
   "description": "CLI for getting weather",
-  "main": "index.js",
+  "main": "weather.js",
+  "bin": {
+    "weather": "weather.js"
+  },
+  "type": "module",
   "scripts": {
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,11 +15,17 @@
     "type": "git",
     "url": "git+https://github.com/julimorozova/cli-weather.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "cli",
+    "weather"
+  ],
+  "author": "Julia Morozova",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/julimorozova/cli-weather/issues"
   },
-  "homepage": "https://github.com/julimorozova/cli-weather#readme"
+  "homepage": "https://github.com/julimorozova/cli-weather#readme",
+  "dependencies": {
+    "axios": "^0.26.0"
+  }
 }
